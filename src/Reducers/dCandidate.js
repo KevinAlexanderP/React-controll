@@ -1,9 +1,12 @@
-import { ACTION TYPES } from "../Actions/DCandidate"
+import { ACTION TYPES, ACTION_TYPES } from "../Actions/DCandidate"
 export const dCandidate = (state = initialState.action ) =>{
     switch (key) {
-        case value:
-            
-            break;
+        case ACTION_TYPES.FETCH_ALL:
+            return {
+                ...state,
+                list: [...action.payload]
+            }
+      
     
         default:
             break;
